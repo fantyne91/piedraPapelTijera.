@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="newcss.css">
+	<title>Piedra Papel Tijera</title>
+</head>
+<!-- EL BODY ESTÁ EN MINUSCULAS YA QUE USAMOS SMALLCAPS-->
+<body>
+<div id="container">
+<div id="juego">
+	<h2> Piedra Papel o Tijera</h2>
+
+	<p><label>introduce el nombre del jugador </label><input type="text" name="nombre"></p>
+	<p><label>¿cuántas partidas quieres jugar? </label><input type="number" name="partidas" value="0"></p>
+	<button>¡JUGAR!</button>
+
+
+	<h3>jugando la partida <span id="actual">0</span> de <span id="total">0</span>.</h3>
+        
+	<div id="jugador">
+		<img class="seleccionado" src="img/defecto.png">
+		<img class="noSeleccionado" src="img/defecto.png">
+		<img class="noSeleccionado" src="img/defecto.png">
+	</div>
+
+	<h2>piedra, papel o tijera.... <button>¡YA!</button></h2>
+
+	
+	<div id="maquina">
+		<img src="img/defecto.png">
+	</div>
+
+	<div>
+		<h3>Historial de partidas</h3>
+		<ul id="historial">
+		</ul>
+		<button>RESET</button>
+	</div>
+</div>
+
+<div id="guia">
+	<h2><u>como jugar:	</u></h2>
+	<ul>
+		<li> Introduce tu nombre y el número de partidas
+			 y presiona JUGAR! </li>
+		<li> Selecciona piedra papel o tijera y dale a YA! <br>
+		recuerda volver a seleccionar en cada partida</li>
+
+		<li> En el historial podrás ver los resultados</li>
+	</ul>	
+	
+
+</div>
+</div>
+	<script type="text/javascript" src="js.js"></script>
+
+</body>
+</html>
